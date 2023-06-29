@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="forms_1_1">
+      <form action="">
+        <label for="number">Zahl</label>
+        <input type="number" name="number" id="number" />
+        <button type="submit" onclick="multiplizieren(event)">*2</button>
+      </form>
+      <div class="results"></div>
+    </section>
+    <hr />
+    <section class="forms_1_2_your_age">
+      <form action="" onsubmit="birthYear(event)">
+        <label for="age">Gib dein Geburtsjahr ein:</label><br />
+        <input type="number" name="age" id="age" />
+        <br />
+        <button type="submit">Berechne</button>
+      </form>
+      <div class="birth_years"></div>
+    </section>
+    <section class="color_change_section">
+      <form action="" onsubmit="changeColor(event)">
+        <input type="color" name="color" id="color" />
+        <label for="color">Give me a Color!</label>
+        <button type="submit">Senden</button>
+      </form>
+    </section>
+    <section class="age_differnz_section">
+      <form action="" onsubmit="compare_age(event)">
+        <label for="age1">Alter 1</label>
+        <input type="number" name="age1" id="age1" />
+        <br />
+        <label for="age2">Alter 2</label>
+        <input type="number" name="age2" id="age2" />
+        <br />
+        <button type="submit">Berechne!</button>
+        <div class="results_differenz"></div>
+      </form>
+    </section>
+    <section class="change_headline_section">
+      <h1 class="headline">Hier ist die Headline</h1>
+      <button class="change_headline" onclick="changeHeadline()">change Headline</button>
+      <button class="reset_headline" onclick="resetHeadline()">reset Headline</button>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
