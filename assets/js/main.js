@@ -62,9 +62,11 @@ function compare_age(event) {
 const headline = document.querySelector(".headline");
 
 function changeHeadline() {
-  headline.style.backgroundColor = "#f00";
+  // headline.style.backgroundColor = "#f00";
+  headline.classList.add("red");
 }
 
 function resetHeadline() {
-  headline.style.backgroundColor = "initial";
+  // headline.style.backgroundColor = "initial";
+  headline.classList.remove("red");
 }
